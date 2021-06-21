@@ -1,0 +1,10 @@
+<h1>Items Available</h1>
+<%= button_to "Add Item", new_sample_item_path, method: :get %>
+
+<ul>
+  <% @sample_items.each do |item| %>
+    <li>
+      <%= link_to item.name, sample_item_path(item) %>
+    </li>
+  <%end%>
+</ul>

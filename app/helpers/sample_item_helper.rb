@@ -1,0 +1,2 @@
+module SampleItemHelper
+end
